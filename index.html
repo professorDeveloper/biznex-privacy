@@ -4,282 +4,144 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Privacy Policy — Biznex Back Office</title>
-<meta name="description" content="Privacy Policy for the Biznex Back Office mobile application. No tracking, no ads — only the data the app needs to work." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<meta name="description" content="Privacy Policy for the Biznex Back Office mobile application." />
 <style>
-:root{
-  --green:#12a150; --green-600:#0e8a44; --green-700:#0b6f38; --green-050:#eef8f1;
-  --ink:#0b1f17; --body:#425049; --muted:#75847c; --bg:#ffffff; --soft:#f5f9f6;
-  --line:#e5ece8; --card:#ffffff;
-  --sh-sm:0 1px 2px rgba(11,31,23,.05); --sh:0 4px 24px -8px rgba(11,111,56,.18);
-  --sh-lg:0 24px 70px -30px rgba(11,111,56,.4);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:"Plus Jakarta Sans",sans-serif;color:var(--body);background:var(--bg);
-  line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:var(--green-600);text-decoration:none}
-h1,h2,h3{color:var(--ink);letter-spacing:-.02em;line-height:1.1}
+  :root{ --ink:#1b1b1b; --muted:#666; --line:#e2e2e2; --link:#0b6f38; --bg:#fff; }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:17px; line-height:1.65;
+  }
+  .top{
+    border-bottom:1px solid var(--line); padding:16px 24px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  }
+  .top .in{max-width:760px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+  .top strong{font-weight:700;font-size:16px;letter-spacing:.2px}
+  .top a{color:var(--muted);text-decoration:none;font-size:14px}
+  .top a:hover{color:var(--ink)}
 
-/* ---------- nav ---------- */
-.nav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;
-  padding:14px clamp(18px,5vw,60px);background:rgba(255,255,255,.72);backdrop-filter:blur(14px);
-  border-bottom:1px solid transparent;transition:.3s}
-.nav.stuck{border-color:var(--line);box-shadow:var(--sh-sm)}
-.brand{display:flex;align-items:center;gap:11px;font-weight:800;color:var(--ink);font-size:18px}
-.mark{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:#fff;font-weight:800;
-  font-size:19px;background:linear-gradient(145deg,#2bd06f,#0b6f38);box-shadow:0 6px 16px -4px rgba(11,111,56,.55)}
-.nav-r{display:flex;align-items:center;gap:18px}
-.switch{display:flex;gap:4px;background:var(--soft);padding:4px;border-radius:999px;border:1px solid var(--line)}
-.switch a{font-size:13px;font-weight:600;padding:7px 15px;border-radius:999px;color:var(--muted);transition:.2s}
-.switch a.on{background:#fff;color:var(--ink);box-shadow:var(--sh-sm)}
-.nav-site{font-size:14px;font-weight:600;color:var(--body)}
-@media(max-width:720px){.nav-site{display:none}}
+  main{max-width:760px;margin:0 auto;padding:52px 24px 80px}
+  h1{font-size:34px;line-height:1.2;margin:0 0 6px;font-weight:700}
+  .meta{color:var(--muted);font-size:15px;margin:0 0 28px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+  hr{border:0;border-top:1px solid var(--line);margin:28px 0}
 
-/* ---------- hero ---------- */
-.hero{position:relative;overflow:hidden;color:#eafff2;text-align:center;
-  padding:clamp(64px,11vw,132px) 24px clamp(120px,15vw,190px);
-  background:radial-gradient(130% 120% at 12% -10%,#1fc06d 0%,#0e8a44 40%,#0a5c30 72%,#063c20 100%)}
-.hero::before{content:"";position:absolute;inset:0;opacity:.5;pointer-events:none;
-  background:
-   radial-gradient(40% 55% at 82% 18%,rgba(96,235,168,.55),transparent 60%),
-   radial-gradient(45% 50% at 25% 88%,rgba(20,180,120,.5),transparent 62%)}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.10;
-  background-image:linear-gradient(rgba(255,255,255,.7) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.7) 1px,transparent 1px);
-  background-size:52px 52px;mask-image:radial-gradient(80% 70% at 50% 30%,#000,transparent 78%)}
-.hero-in{position:relative;max-width:820px;margin:0 auto}
-.badge{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;font-size:13px;
-  font-weight:600;color:#d6ffe7;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);
-  backdrop-filter:blur(6px);margin-bottom:26px}
-.badge .pin{width:7px;height:7px;border-radius:50%;background:#78ffb4;box-shadow:0 0 12px #78ffb4}
-.hero h1{color:#fff;font-size:clamp(40px,7.2vw,74px);font-weight:800;letter-spacing:-.035em}
-.hero p{margin:22px auto 0;max-width:60ch;font-size:clamp(16px,2.1vw,20px);color:#c7ecd6;line-height:1.6}
-.hero-meta{margin-top:30px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;font-size:13.5px;color:#a9dcc0}
-.hero-meta span{padding:6px 13px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16)}
+  a{color:var(--link)}
+  p{margin:14px 0}
+  h2{font-size:21px;margin:38px 0 6px;font-weight:700;line-height:1.3}
+  h3{font-size:17px;margin:20px 0 2px;font-weight:700}
+  ul{margin:12px 0;padding-left:22px}
+  li{margin:7px 0}
 
-/* ---------- highlights ---------- */
-.highlights{max-width:1120px;margin:-84px auto 0;padding:0 clamp(18px,5vw,60px);position:relative;z-index:5;
-  display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.hl{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 20px;box-shadow:var(--sh-lg)}
-.hl .ic{width:42px;height:42px;border-radius:12px;background:var(--green-050);display:grid;place-items:center;margin-bottom:14px}
-.hl svg{width:22px;height:22px;stroke:var(--green-600)}
-.hl h3{font-size:15.5px;font-weight:700;margin-bottom:4px}
-.hl p{font-size:13.5px;color:var(--muted);line-height:1.55}
-@media(max-width:900px){.highlights{grid-template-columns:repeat(2,1fr);margin-top:-70px}}
-@media(max-width:480px){.highlights{grid-template-columns:1fr}}
+  .toc{background:#fafafa;border:1px solid var(--line);border-radius:6px;padding:18px 22px;margin:26px 0}
+  .toc p{margin:0 0 8px;font-weight:700;font-size:15px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}
+  .toc ol{margin:0;padding-left:20px}
+  .toc li{margin:4px 0;font-size:15.5px}
 
-/* ---------- body ---------- */
-.wrap{max-width:1120px;margin:0 auto;padding:clamp(64px,9vw,104px) clamp(18px,5vw,60px) 40px;
-  display:grid;grid-template-columns:250px 1fr;gap:clamp(32px,6vw,80px);align-items:start}
-.toc{position:sticky;top:96px}
-.toc-label{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:14px}
-.toc a{display:block;padding:9px 14px;border-radius:10px;color:var(--muted);font-weight:600;font-size:14px;
-  transition:.2s;border-left:2.5px solid transparent}
-.toc a:hover{background:var(--soft);color:var(--ink)}
-.toc a.active{background:var(--green-050);color:var(--green-700);border-left-color:var(--green)}
-.toc .ask{margin-top:20px;padding:16px;border-radius:14px;background:var(--soft);border:1px solid var(--line);font-size:13px;color:var(--muted)}
-.toc .ask b{color:var(--ink);display:block;margin-bottom:4px;font-size:14px}
-
-article{max-width:720px}
-.lede{font-size:clamp(19px,2.4vw,23px);line-height:1.55;color:var(--ink);font-weight:500}
-.lede b{color:var(--green-600)}
-.callout{margin:26px 0 8px;background:linear-gradient(180deg,var(--green-050),#fff);border:1px solid #cfe7d9;
-  border-radius:16px;padding:20px 22px;display:flex;gap:14px;box-shadow:var(--sh-sm)}
-.callout svg{flex:none;width:22px;height:22px;stroke:var(--green-600);margin-top:2px}
-.callout b{color:var(--ink)}
-section{padding:40px 0;border-top:1px solid var(--line)}
-section:first-of-type{border-top:0}
-.kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--green);background:var(--green-050);padding:5px 11px;border-radius:8px;margin-bottom:14px}
-section h2{font-size:clamp(25px,3.2vw,32px);font-weight:800;margin-bottom:10px}
-section p{margin:12px 0}
-section p strong,li strong{color:var(--ink);font-weight:700}
-.cards{display:grid;gap:12px;margin-top:20px}
-.data{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;display:flex;gap:16px;
-  box-shadow:var(--sh-sm);transition:.25s}
-.data:hover{border-color:#bfe3cd;box-shadow:var(--sh);transform:translateY(-2px)}
-.data .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--green-050);display:grid;place-items:center}
-.data svg{width:22px;height:22px;stroke:var(--green-600)}
-.data h3{font-size:16.5px;font-weight:700;margin-bottom:3px}
-.data p{margin:0;font-size:14.5px;line-height:1.6;color:var(--body)}
-ul.clean{list-style:none;margin:16px 0;display:grid;gap:10px}
-ul.clean li{position:relative;padding-left:30px;color:var(--body)}
-ul.clean li::before{content:"";position:absolute;left:0;top:8px;width:18px;height:18px;border-radius:50%;
-  background:var(--green-050) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%230e8a44' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center/12px no-repeat}
-
-/* ---------- CTA ---------- */
-.cta{max-width:1120px;margin:20px auto 0;padding:0 clamp(18px,5vw,60px)}
-.cta-in{background:linear-gradient(135deg,#0e8a44,#0a5c30);border-radius:24px;padding:clamp(30px,5vw,52px);
-  color:#eafff2;display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;box-shadow:var(--sh-lg);position:relative;overflow:hidden}
-.cta-in::after{content:"";position:absolute;top:-40%;right:-10%;width:340px;height:340px;border-radius:50%;
-  background:radial-gradient(circle,rgba(120,255,180,.35),transparent 65%)}
-.cta-in h2{color:#fff;font-size:clamp(22px,3vw,29px);font-weight:800}
-.cta-in p{color:#bfeacf;margin-top:6px;font-size:15px}
-.cta-btn{position:relative;z-index:2;display:inline-flex;align-items:center;gap:9px;background:#fff;color:var(--green-700);
-  font-weight:700;padding:14px 24px;border-radius:12px;font-size:15px;box-shadow:0 10px 30px -10px rgba(0,0,0,.4);transition:.2s}
-.cta-btn:hover{transform:translateY(-2px)}
-
-/* ---------- footer ---------- */
-footer{margin-top:70px;background:#071a10;color:#9fc4ad;padding:clamp(44px,6vw,64px) clamp(18px,5vw,60px) 40px}
-.foot{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px}
-.foot .b1 .brand{color:#fff}.foot .b1 .mark{box-shadow:none}
-.foot p{font-size:14px;margin-top:14px;max-width:34ch;color:#8fb8a1}
-.foot h4{color:#fff;font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:14px;font-weight:700}
-.foot a{display:block;color:#9fc4ad;font-size:14.5px;padding:5px 0;transition:.2s}
-.foot a:hover{color:#78ffb4}
-.foot-btm{max-width:1120px;margin:40px auto 0;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);
-  display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:13px;color:#77937f}
-@media(max-width:820px){.wrap{grid-template-columns:1fr}.toc{display:none}.foot{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.foot{grid-template-columns:1fr}}
-
-.rise{opacity:0;transform:translateY(22px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
-@keyframes rise{to{opacity:1;transform:none}}
-.d1{animation-delay:.05s}.d2{animation-delay:.13s}.d3{animation-delay:.21s}.d4{animation-delay:.29s}
-@media(prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}}
+  .foot{max-width:760px;margin:0 auto;padding:24px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:14px;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .foot a{color:var(--muted)}
 </style>
 </head>
 <body>
 
-<nav class="nav" id="nav">
-  <a class="brand" href="https://biznex.uz"><span class="mark">B</span> Biznex</a>
-  <div class="nav-r">
-    <a class="nav-site" href="https://biznex.uz">biznex.uz ↗</a>
-    <div class="switch">
-      <a class="on" href="./">Back Office</a>
-      <a href="./cashier/">Kassir</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-in">
-    <span class="badge rise d1"><span class="pin"></span> Biznex Cloud · Privacy</span>
-    <h1 class="rise d2">Your data, <br>handled with care.</h1>
-    <p class="rise d3">This policy explains exactly what the Biznex Back Office app collects, why, and the control you have over it — written to be read, not skimmed.</p>
-    <div class="hero-meta rise d4"><span>Effective 2 July 2026</span><span>Back Office Mobile</span><span>English</span></div>
-  </div>
-</header>
-
-<div class="highlights">
-  <div class="hl rise d1"><div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M18.36 6.64A9 9 0 1120.77 15M23 4v5h-5"/><path d="M1 1l22 22"/></svg></div><h3>No ads, ever</h3><p>Your business data is never used for advertising.</p></div>
-  <div class="hl rise d2"><div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M2 12s3.5-7 10-7 10 7 10 7M2 12l3-3M22 12l-3 3"/></svg></div><h3>No tracking</h3><p>No third-party trackers following you around.</p></div>
-  <div class="hl rise d3"><div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>You stay in control</h3><p>Access or delete your data any time.</p></div>
-  <div class="hl rise d4"><div class="ic"><svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg></div><h3>Encrypted</h3><p>All data travels over encrypted HTTPS.</p></div>
-</div>
-
-<div class="wrap">
-  <aside class="toc" id="toc">
-    <div class="toc-label">On this page</div>
-    <a href="#collect">1 · Data we collect</a>
-    <a href="#use">2 · How we use it</a>
-    <a href="#security">3 · Storage &amp; security</a>
-    <a href="#sharing">4 · Data sharing</a>
-    <a href="#retention">5 · Retention</a>
-    <a href="#rights">6 · Your rights</a>
-    <a href="#contact">7 · Contact</a>
-    <div class="ask"><b>Questions?</b> Reach us at <a href="mailto:support@biznex.uz">support@biznex.uz</a></div>
-  </aside>
-
-  <article>
-    <p class="lede">Biznex Back Office is the mobile management companion for restaurant and retail businesses on the Biznex Cloud platform. Owners and branch managers use it to monitor operations from anywhere. We collect <b>only what the app needs to work</b>.</p>
-
-    <div class="callout">
-      <svg fill="none" stroke-width="1.8" viewBox="0 0 24 24"><path d="M12 16v-4M12 8h.01"/><circle cx="12" cy="12" r="10"/></svg>
-      <div><b>In short:</b> we process your account and business data to run the app, keep diagnostics to stay reliable, and never sell your data or use it for advertising.</div>
-    </div>
-
-    <section id="collect">
-      <span class="kicker">Section 1</span>
-      <h2>Data we collect</h2>
-      <p>We collect three categories of data, all in service of running the app for your business:</p>
-      <div class="cards">
-        <div class="data"><div class="ic"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5z"/></svg></div><div><h3>Account data</h3><p>Name, email, phone and role — used to authenticate you and control access. Accounts are created by your business administrator.</p></div></div>
-        <div class="data"><div class="ic"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div><div><h3>Business data</h3><p>Sales, orders, inventory, staff and financial records that you and your business generate within the platform.</p></div></div>
-        <div class="data"><div class="ic"><svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 2"/></svg></div><div><h3>Technical data</h3><p>App version, device type and diagnostic logs — used to keep the service secure and reliable.</p></div></div>
-      </div>
-    </section>
-
-    <section id="use">
-      <span class="kicker">Section 2</span>
-      <h2>How we use it</h2>
-      <p>We use your data solely to provide and secure the service. Specifically:</p>
-      <ul class="clean">
-        <li>Authenticating you and enforcing role-based access.</li>
-        <li>Displaying your business reports, dashboards and operations.</li>
-        <li>Diagnosing issues and keeping the app stable.</li>
-      </ul>
-      <p>We do <strong>not</strong> sell your data, use it for advertising, or track you across other apps or websites.</p>
-    </section>
-
-    <section id="security">
-      <span class="kicker">Section 3</span>
-      <h2>Storage &amp; security</h2>
-      <p>Authentication tokens are stored encrypted on your device. Data is transmitted over encrypted HTTPS connections and stored on secured servers.</p>
-    </section>
-
-    <section id="sharing">
-      <span class="kicker">Section 4</span>
-      <h2>Data sharing</h2>
-      <p>Data is shared only within your own organization, according to your assigned role and permissions. We do not share personal data with third parties except as required by law.</p>
-    </section>
-
-    <section id="retention">
-      <span class="kicker">Section 5</span>
-      <h2>Retention</h2>
-      <p>We retain business and account data for as long as your account is active, and as required by applicable law.</p>
-    </section>
-
-    <section id="rights">
-      <span class="kicker">Section 6</span>
-      <h2>Your rights</h2>
-      <p>You may request access to or deletion of your account data by contacting your business administrator or us at the address below.</p>
-    </section>
-
-    <section id="contact">
-      <span class="kicker">Section 7</span>
-      <h2>Contact</h2>
-      <p>Questions about this policy or your data? We&rsquo;re happy to help.</p>
-    </section>
-  </article>
-</div>
-
-<div class="cta">
-  <div class="cta-in">
-    <div><h2>Questions about your data?</h2><p>Our team responds to privacy requests directly.</p></div>
-    <a class="cta-btn" href="mailto:support@biznex.uz">Contact support →</a>
+<div class="top">
+  <div class="in">
+    <strong>Biznex</strong>
+    <a href="./cashier/">Kassir privacy policy →</a>
   </div>
 </div>
 
-<footer>
-  <div class="foot">
-    <div class="b1">
-      <a class="brand" href="https://biznex.uz"><span class="mark">B</span> Biznex</a>
-      <p>Cloud point-of-sale for restaurants and retail. Built by Deep Space LLC.</p>
-    </div>
-    <div><h4>Apps</h4>
-      <a href="./">Back Office · Privacy</a>
-      <a href="./cashier/">Kassir · Privacy</a>
-      <a href="https://biznex.uz">biznex.uz ↗</a>
-    </div>
-    <div><h4>Contact</h4>
-      <a href="mailto:support@biznex.uz">support@biznex.uz</a>
-      <a href="tel:+998555880111">+998 (55) 588-01-11</a>
-    </div>
-  </div>
-  <div class="foot-btm"><span>© 2026 Deep Space LLC. All rights reserved.</span><span>Last updated 2 July 2026</span></div>
-</footer>
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Biznex Back Office · Last updated 2 July 2026</p>
+  <hr />
 
-<script>
-const nav=document.getElementById('nav');
-addEventListener('scroll',()=>nav.classList.toggle('stuck',scrollY>10));
-const links=[...document.querySelectorAll('#toc a[href^="#"]')];
-const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){
-  links.forEach(l=>l.classList.remove('active'));map.get(e.target.id)?.classList.add('active');}});},
-  {rootMargin:'-40% 0px -55% 0px'});
-document.querySelectorAll('section[id]').forEach(s=>obs.observe(s));
-</script>
+  <p>This Privacy Policy describes how Biznex (operated by Deep Space LLC) handles information
+  in connection with the <strong>Biznex Back Office</strong> mobile application (the &ldquo;App&rdquo;).
+  The App is a management tool for restaurant and retail businesses that use the Biznex Cloud
+  platform. By using the App you agree to the practices described below.</p>
+
+  <div class="toc">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#collect">Information we collect</a></li>
+      <li><a href="#use">How we use information</a></li>
+      <li><a href="#storage">Storage and security</a></li>
+      <li><a href="#sharing">Sharing of information</a></li>
+      <li><a href="#retention">Data retention</a></li>
+      <li><a href="#rights">Your rights and choices</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </div>
+
+  <h2 id="collect">1. Information we collect</h2>
+  <p>The App collects only the information needed to operate. We do not use it for advertising,
+  and we do not track you across other apps or websites.</p>
+  <h3>Account information</h3>
+  <p>Your name, email address, phone number and assigned role. This information is used to sign
+  you in and to control what you can access. Accounts are created by your business administrator;
+  the App has no public sign-up.</p>
+  <h3>Business information</h3>
+  <p>Operational records you and your business generate on the platform, such as sales, orders,
+  inventory, staff and financial data.</p>
+  <h3>Technical information</h3>
+  <p>Basic technical details such as app version, device type and diagnostic logs, used to keep
+  the service secure and reliable.</p>
+
+  <h2 id="use">2. How we use information</h2>
+  <p>We use the information described above to:</p>
+  <ul>
+    <li>authenticate you and enforce role-based access;</li>
+    <li>display your business reports, dashboards and day-to-day operations;</li>
+    <li>diagnose problems and keep the App stable and secure.</li>
+  </ul>
+  <p>We do not sell your information, and we do not use it for advertising or cross-app tracking.</p>
+
+  <h2 id="storage">3. Storage and security</h2>
+  <p>Authentication tokens are stored in encrypted storage on your device. Information is
+  transmitted over encrypted HTTPS connections and stored on secured servers. We apply
+  reasonable technical and organisational measures to protect it.</p>
+
+  <h2 id="sharing">4. Sharing of information</h2>
+  <p>Your information is shared only within your own organisation, according to your assigned role
+  and permissions. We do not share personal information with third parties except where required
+  by law or to protect the rights and safety of users.</p>
+
+  <h2 id="retention">5. Data retention</h2>
+  <p>We retain business and account information for as long as your account remains active and as
+  required by applicable law. When it is no longer needed, it is deleted or anonymised.</p>
+
+  <h2 id="rights">6. Your rights and choices</h2>
+  <p>You may request access to, correction of, or deletion of your account information. Because
+  accounts are managed by your business, please contact your business administrator, or contact
+  us directly using the details below.</p>
+
+  <h2 id="changes">7. Changes to this policy</h2>
+  <p>We may update this policy from time to time. When we do, we will revise the &ldquo;Last
+  updated&rdquo; date at the top of this page. Continued use of the App after changes take effect
+  constitutes acceptance of the updated policy.</p>
+
+  <h2 id="contact">8. Contact us</h2>
+  <p>If you have any questions about this Privacy Policy or your data, contact us at:</p>
+  <p>
+    Biznex — Deep Space LLC<br />
+    Email: <a href="mailto:support@biznex.uz">support@biznex.uz</a><br />
+    Phone: +998 (55) 588-01-11
+  </p>
+</main>
+
+<div class="foot">
+  <span>© 2026 Deep Space LLC</span>
+  <span><a href="./cashier/">Biznex Kassir privacy policy</a></span>
+</div>
+
 </body>
 </html>
