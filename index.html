@@ -1,144 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy — Biznex Back Office</title>
-  <meta name="description" content="Privacy Policy for the Biznex Back Office mobile application." />
-  <style>
-    :root {
-      --green: #16a34a;
-      --green-dark: #12813b;
-      --ink: #1f2933;
-      --muted: #5b6b7a;
-      --line: #e6ebef;
-      --bg: #f6f8f9;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-    .hero {
-      background: linear-gradient(135deg, #34d399 0%, #16a34a 100%);
-      color: #fff;
-      padding: 56px 24px 40px;
-      text-align: center;
-    }
-    .logo {
-      width: 64px; height: 64px;
-      border-radius: 16px;
-      background: rgba(255,255,255,.18);
-      display: inline-flex; align-items: center; justify-content: center;
-      font-weight: 800; font-size: 34px; color: #fff;
-      margin-bottom: 16px;
-      border: 1px solid rgba(255,255,255,.35);
-    }
-    .hero h1 { margin: 0; font-size: 26px; font-weight: 700; letter-spacing: -.2px; }
-    .hero p { margin: 8px 0 0; opacity: .9; font-size: 15px; }
-    main {
-      max-width: 760px;
-      margin: -24px auto 48px;
-      background: #fff;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 32px 28px;
-    }
-    .updated { color: var(--muted); font-size: 14px; margin-top: 0; }
-    h2 {
-      font-size: 18px; margin: 28px 0 8px; color: var(--green-dark);
-      padding-top: 18px; border-top: 1px solid var(--line);
-    }
-    h2:first-of-type { border-top: 0; padding-top: 0; }
-    p { margin: 8px 0; }
-    ul { margin: 8px 0; padding-left: 20px; }
-    li { margin: 6px 0; }
-    a { color: var(--green-dark); }
-    .contact {
-      background: var(--bg);
-      border-radius: 12px;
-      padding: 16px 18px;
-      margin-top: 10px;
-      font-size: 15px;
-    }
-    footer {
-      text-align: center; color: var(--muted); font-size: 13px;
-      padding: 0 24px 40px;
-    }
-    strong { color: var(--ink); }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Biznex Back Office</title>
+<meta name="description" content="Privacy Policy for the Biznex Back Office mobile application." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#f4f1ea; --paper-2:#efe9df; --ink:#12211b; --ink-soft:#4a5a52;
+  --emerald:#0f8a4d; --emerald-deep:#0a6b3b; --line:#ddd6c8; --card:#fbfaf6;
+  --shadow:0 1px 2px rgba(18,33,27,.04),0 12px 40px -12px rgba(10,107,59,.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Hanken Grotesk",sans-serif;background:var(--paper);color:var(--ink);
+  line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+a{color:var(--emerald-deep);text-decoration:none}
+
+.bar{
+  position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;
+  padding:16px clamp(20px,5vw,64px);background:rgba(244,241,234,.82);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:.2px}
+.mark{
+  width:34px;height:34px;border-radius:9px;display:grid;place-items:center;color:#fff;
+  font-family:"Fraunces",serif;font-weight:600;font-size:20px;
+  background:linear-gradient(150deg,#22b869,#0a6b3b);box-shadow:0 4px 14px -4px rgba(10,107,59,.5);
+}
+.switch{display:flex;gap:6px;background:var(--paper-2);padding:4px;border-radius:999px;border:1px solid var(--line)}
+.switch a{font-size:13px;font-weight:600;padding:7px 15px;border-radius:999px;color:var(--ink-soft);transition:.25s}
+.switch a.on{background:var(--ink);color:var(--paper)}
+.switch a:not(.on):hover{color:var(--ink)}
+
+.hero{position:relative;padding:clamp(56px,10vw,120px) clamp(20px,5vw,64px) clamp(40px,6vw,72px);
+  max-width:1180px;margin:0 auto;overflow:hidden}
+.hero-glow{position:absolute;top:-160px;right:-120px;width:520px;height:520px;border-radius:50%;
+  background:radial-gradient(circle,rgba(34,184,105,.22),transparent 65%);filter:blur(10px);pointer-events:none}
+.eyebrow{font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--emerald-deep);
+  font-weight:700;margin-bottom:22px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:34px;height:1.5px;background:var(--emerald)}
+.hero h1{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(46px,9vw,104px);line-height:.98;
+  letter-spacing:-.02em;max-width:12ch}
+.hero h1 em{font-style:italic;color:var(--emerald-deep)}
+.hero-sub{margin-top:26px;font-size:clamp(17px,2.2vw,21px);color:var(--ink-soft);max-width:56ch}
+.chip{display:inline-flex;align-items:center;gap:9px;margin-top:30px;padding:8px 16px;border-radius:999px;
+  background:var(--card);border:1px solid var(--line);font-size:13.5px;font-weight:600;color:var(--ink-soft);
+  box-shadow:var(--shadow)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--emerald);box-shadow:0 0 0 4px rgba(15,138,77,.15)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,64px) 90px;display:grid;
+  grid-template-columns:230px 1fr;gap:clamp(30px,6vw,88px);align-items:start}
+.toc{position:sticky;top:96px;font-size:14px}
+.toc-label{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);
+  font-weight:700;margin-bottom:16px;opacity:.7}
+.toc ol{list-style:none;counter-reset:t;display:flex;flex-direction:column;gap:2px}
+.toc li{counter-increment:t}
+.toc a{display:flex;gap:11px;padding:8px 12px;border-radius:9px;color:var(--ink-soft);
+  font-weight:500;transition:.2s;border-left:2px solid transparent}
+.toc a::before{content:counter(t,decimal-leading-zero);font-family:"Fraunces",serif;
+  color:var(--emerald);font-size:12px;opacity:.7}
+.toc a:hover{background:var(--paper-2);color:var(--ink)}
+
+article{max-width:680px}
+.lede{font-size:clamp(19px,2.5vw,23px);line-height:1.55;color:var(--ink);font-weight:400;padding-bottom:14px}
+.lede b{color:var(--emerald-deep);font-weight:600}
+section{padding:38px 0;border-top:1px solid var(--line)}
+section h2{font-family:"Fraunces",serif;font-weight:500;font-size:clamp(26px,3.4vw,33px);letter-spacing:-.01em;
+  margin-bottom:14px;display:flex;align-items:baseline;gap:16px}
+section h2 .num{font-size:14px;color:var(--emerald);font-weight:600;letter-spacing:.05em}
+section p{color:var(--ink-soft);margin:10px 0}
+section p strong,li strong{color:var(--ink);font-weight:600}
+.cards{display:grid;gap:12px;margin-top:18px}
+.data{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;
+  display:flex;gap:16px;box-shadow:var(--shadow);transition:.3s}
+.data:hover{transform:translateY(-2px);border-color:rgba(15,138,77,.4)}
+.data svg{flex:none;width:22px;height:22px;stroke:var(--emerald-deep);margin-top:3px}
+.data h3{font-size:16px;font-weight:700;margin-bottom:3px}
+.data p{margin:0;font-size:14.5px;line-height:1.6}
+.contact{margin-top:22px;background:linear-gradient(155deg,var(--ink),#0a1913);color:var(--paper);
+  border-radius:18px;padding:30px 32px;box-shadow:var(--shadow)}
+.contact .co{font-family:"Fraunces",serif;font-size:22px;font-weight:500;margin-bottom:12px}
+.contact a{color:#5fe39b}
+.contact .row{display:flex;gap:10px;font-size:15px;opacity:.9;margin-top:4px}
+
+footer{border-top:1px solid var(--line);padding:40px clamp(20px,5vw,64px);max-width:1180px;margin:0 auto;
+  display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center;color:var(--ink-soft);font-size:13.5px}
+footer .fb{display:flex;align-items:center;gap:9px;font-weight:600;color:var(--ink)}
+
+.rise{opacity:0;transform:translateY(20px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+@keyframes rise{to{opacity:1;transform:none}}
+.d1{animation-delay:.05s}.d2{animation-delay:.14s}.d3{animation-delay:.23s}.d4{animation-delay:.32s}
+
+@media(max-width:860px){.wrap{grid-template-columns:1fr;gap:8px}.toc{display:none}.switch a{padding:6px 12px}}
+@media(prefers-reduced-motion:reduce){.rise{animation:none;opacity:1;transform:none}}
+</style>
 </head>
 <body>
-  <header class="hero">
-    <div class="logo">B</div>
-    <h1>Privacy Policy</h1>
-    <p>Biznex Back Office</p>
-  </header>
 
-  <main>
-    <p class="updated">Last updated: 2 July 2026</p>
+<div class="bar">
+  <div class="brand"><span class="mark">B</span> Biznex</div>
+  <nav class="switch">
+    <a class="on" href="./">Back Office</a>
+    <a href="./cashier/">Kassir</a>
+  </nav>
+</div>
 
-    <p>
-      Biznex Back Office (&ldquo;the App&rdquo;) is a business management application
-      for merchants using the Biznex Cloud POS platform. This policy explains what
-      data we process and why.
-    </p>
+<header class="hero">
+  <div class="hero-glow"></div>
+  <p class="eyebrow rise d1">Biznex Cloud · Legal</p>
+  <h1 class="rise d2">Privacy,<br><em>by design.</em></h1>
+  <p class="hero-sub rise d3">How the Biznex Back Office app handles the data you and your business trust us with — in plain language.</p>
+  <span class="chip rise d4"><span class="dot"></span> Last updated 2 July 2026 · Back Office Mobile</span>
+</header>
 
-    <h2>1. Data we collect</h2>
-    <ul>
-      <li><strong>Account data:</strong> name, email, phone number, and role, used to
-        authenticate you and control access. Accounts are created by your business administrator.</li>
-      <li><strong>Business data:</strong> sales, orders, inventory, staff, and financial records
-        that you and your business generate within the platform.</li>
-      <li><strong>Technical data:</strong> app version, device type, and diagnostic logs, used to
-        keep the service secure and reliable.</li>
-    </ul>
+<div class="wrap">
+  <aside class="toc">
+    <div class="toc-label">Contents</div>
+    <ol>
+      <li><a href="#collect">Data we collect</a></li>
+      <li><a href="#use">How we use it</a></li>
+      <li><a href="#security">Storage &amp; security</a></li>
+      <li><a href="#sharing">Data sharing</a></li>
+      <li><a href="#retention">Retention</a></li>
+      <li><a href="#rights">Your rights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </aside>
 
-    <h2>2. How we use data</h2>
-    <p>
-      We use your data only to provide and secure the service: authentication, displaying your
-      business reports and operations, and troubleshooting. We do <strong>not</strong> sell your
-      data, use it for advertising, or track you across other apps or websites.
-    </p>
+  <article>
+    <p class="lede">Biznex Back Office is the mobile management companion for restaurant and retail businesses on the Biznex Cloud platform. Owners and branch managers use it to monitor operations from anywhere. We collect <b>only what the app needs to work</b> — nothing for advertising, nothing for tracking.</p>
 
-    <h2>3. Data storage and security</h2>
-    <p>
-      Authentication tokens are stored encrypted on your device. Data is transmitted over encrypted
-      HTTPS connections and stored on secured servers.
-    </p>
+    <section id="collect">
+      <h2><span class="num">01</span> Data we collect</h2>
+      <div class="cards">
+        <div class="data">
+          <svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14c-4 0-7 2-7 5v1h14v-1c0-3-3-5-7-5z"/></svg>
+          <div><h3>Account data</h3><p>Name, email, phone and role — used to authenticate you and control access. Accounts are created by your business administrator.</p></div>
+        </div>
+        <div class="data">
+          <svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          <div><h3>Business data</h3><p>Sales, orders, inventory, staff and financial records that you and your business generate within the platform.</p></div>
+        </div>
+        <div class="data">
+          <svg fill="none" stroke-width="1.7" viewBox="0 0 24 24"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 8v4l3 2"/></svg>
+          <div><h3>Technical data</h3><p>App version, device type and diagnostic logs — used to keep the service secure and reliable.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <h2>4. Data sharing</h2>
-    <p>
-      Data is shared only within your own organization according to your assigned role and
-      permissions. We do not share personal data with third parties except as required by law.
-    </p>
+    <section id="use">
+      <h2><span class="num">02</span> How we use it</h2>
+      <p>We use your data solely to provide and secure the service: authentication, displaying your business reports and operations, and troubleshooting. We do <strong>not</strong> sell your data, use it for advertising, or track you across other apps or websites.</p>
+    </section>
 
-    <h2>5. Data retention</h2>
-    <p>
-      We retain business and account data for as long as your account is active, and as required
-      by applicable law.
-    </p>
+    <section id="security">
+      <h2><span class="num">03</span> Storage &amp; security</h2>
+      <p>Authentication tokens are stored encrypted on your device. Data is transmitted over encrypted HTTPS connections and stored on secured servers.</p>
+    </section>
 
-    <h2>6. Your rights</h2>
-    <p>
-      You may request access to or deletion of your account data by contacting your business
-      administrator or us at the address below.
-    </p>
+    <section id="sharing">
+      <h2><span class="num">04</span> Data sharing</h2>
+      <p>Data is shared only within your own organization, according to your assigned role and permissions. We do not share personal data with third parties except as required by law.</p>
+    </section>
 
-    <h2>7. Contact</h2>
-    <div class="contact">
-      <strong>Biznex (Deep Space LLC)</strong><br />
-      Email: <a href="mailto:support@biznex.uz">support@biznex.uz</a><br />
-      Phone: +998 (55) 588-01-11
-    </div>
-  </main>
+    <section id="retention">
+      <h2><span class="num">05</span> Retention</h2>
+      <p>We retain business and account data for as long as your account is active, and as required by applicable law.</p>
+    </section>
 
-  <footer>
-    &copy; 2026 Biznex · Deep Space LLC
-  </footer>
+    <section id="rights">
+      <h2><span class="num">06</span> Your rights</h2>
+      <p>You may request access to or deletion of your account data by contacting your business administrator or us at the address below.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">07</span> Contact</h2>
+      <div class="contact">
+        <div class="co">Biznex — Deep Space LLC</div>
+        <div class="row">Email · <a href="mailto:support@biznex.uz">support@biznex.uz</a></div>
+        <div class="row">Phone · +998 (55) 588-01-11</div>
+      </div>
+    </section>
+  </article>
+</div>
+
+<footer>
+  <div class="fb"><span class="mark" style="width:26px;height:26px;font-size:15px">B</span> Biznex Cloud</div>
+  <div>© 2026 Deep Space LLC · All rights reserved</div>
+</footer>
+
 </body>
 </html>
